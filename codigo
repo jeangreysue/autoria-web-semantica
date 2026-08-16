@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Temática - Elementos Semânticos</title>
+    <style>
+        /* Estilos CSS básicos para ajudar a visualizar o layout semântico */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            gap: 20px;
+        }
+        section {
+            flex: 3;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+        aside {
+            flex: 1;
+            background-color: #eaeaea;
+            padding: 20px;
+            border-radius: 5px;
+            min-width: 250px;
+        }
+        article {
+            background-color: #fbfbfb;
+            border-left: 5px solid #007BFF;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 3px;
+        }
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- header: Define o cabeçalho principal da página -->
+    <header>
+        <h1>Portal de Estudos Web</h1>
+        <p>Praticando o uso correto de tags semânticas no HTML5</p>
+    </header>
+
+    <!-- nav: Agrupa links de navegação do site -->
+    <nav>
+        <a href="#artigos">Conteúdo</a>
+        <a href="#sobre">Sobre o Projeto</a>
+        <a href="#referencias">Referências</a>
+    </nav>
+
+    <!-- main: Envolve todo o conteúdo principal e exclusivo da página -->
+    <main>
+        
+        <!-- section: Define uma seção de conteúdo agrupado tematicamente -->
+        <section id="artigos">
+            <h2>Artigos em Destaque</h2>
+            
+            <!-- article: Um bloco de conteúdo autônomo e independente -->
+            <article>
+                <h3>O que são elementos semânticos?</h3>
+                <p>Elementos semânticos são aqueles que descrevem claramente o seu significado para o navegador e para o desenvolvedor. Tags como <code>&lt;header&gt;</code> e <code>&lt;footer&gt;</code> deixam explícito qual o papel de cada bloco de código.</p>
+            </article>
+
+            <article>
+                <h3>A importância da acessibilidade e SEO</h3>
+                <p>Mecanismos de busca (como o Google) e leitores de tela utilizam a semântica do código para entender a hierarquia da página, o que melhora consideravelmente o posicionamento orgânico e a experiência de usuários com deficiência visual.</p>
+            </article>
+        </section>
+
+        <!-- aside: Contém informações complementares, como barras laterais ou links adicionais -->
+        <aside>
+            <h3>Sobre o Autor</h3>
+            <p>Atividade desenvolvida para fixação dos conceitos de estrutura web moderna indicados pelo Prof. Daniel.</p>
+            <h3>Links Rápidos</h3>
+            <ul>
+                <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+                <li><a href="https://github.com" target="_blank">GitHub</a></li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <!-- footer: Define o rodapé do documento -->
+    <footer>
+        <p>&copy; 2026</p>
+    </footer>
+
+</body>
+</html>
